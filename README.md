@@ -2,7 +2,7 @@
 
 Author: Miguel Rios (m.riosgaona@leeds.ac.uk)
 
-Requires: GPY (https://github.com/SheffieldML/GPy) 
+Requires: GPy (https://github.com/SheffieldML/GPy) 
 
 Features extracted from: takelab (http://takelab.fer.hr/sts/), semilar(http://deeptutor2.memphis.edu/Semilar-Web/public/semilar-api.html)
 
