@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use File::Basename;
-#modifies svm fortmat for input of multi-task GP
-#adds tasd if for each training file used
+#modifies svm format for input of multi-task GP
+#adds task id for each training file used
 my $task_id = 1;
 foreach my $name(@ARGV){
     open(my $FILE, $name) or die "file not found\n";
