@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use File::Basename;
-#
+#modifies svm fortmat for input of multi-task GP
+#adds tasd if for each training file used
 my $task_id = 1;
 foreach my $name(@ARGV){
     open(my $FILE, $name) or die "file not found\n";
@@ -10,8 +11,6 @@ foreach my $name(@ARGV){
         chomp($line);
         $line =~ s/[0-9]+://g;
         $line =~ s/NaN/0.0/g;
-        ($y, @x_tmp) = split(/\s+/, $line);
-        $x = join('|||', @x_tmp);
         print "$task_id|||$filename|||$i $line\n";
         $i++;       
     }
